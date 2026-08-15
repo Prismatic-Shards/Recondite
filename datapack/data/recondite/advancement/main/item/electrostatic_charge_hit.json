@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/check"
+  }
+}

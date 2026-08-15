@@ -9,7 +9,8 @@ scoreboard players add @a recondite.lightning.cooldown 1
 scoreboard players add @a recondite.wither.cooldown 1
 scoreboard players add @a recondite.vine.cooldown 1
 scoreboard players add @a recondite.fire_slash.cooldown 1
-scoreboard players add @a recondite.charge.cooldown 1
+scoreboard players add @a recondite.discharge.cooldown 1
+scoreboard players add @a recondite.electrostatic_charge.cooldown 1
 scoreboard players add @a recondite.shock.cooldown 1
 scoreboard players add @a recondite.static.cooldown 1
 scoreboard players add @a recondite.magic.missile.cooldown 1
@@ -19,8 +20,10 @@ scoreboard players add @a[tag=recondite.magic.missile.user] recondite.magic.miss
 
 execute as @a[tag=recondite.flame_volley.user] run function recondite:item/fire_elemental_spellbook/abilities/flame_volley/score
 execute as @a[tag=recondite.flame_volley.user2] run function recondite:item/fire_elemental_spellbook/abilities/tier_2/flame_volley/score
-execute as @a[tag=recondite.charge.user] run function recondite:item/lightning_elemental_spellbook/abilities/charge/score
-execute as @a[tag=recondite.charge.tier2.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/charge/score
+execute as @a[tag=recondite.discharge.user] run function recondite:item/lightning_elemental_spellbook/abilities/discharge/score
+execute as @a[tag=recondite.electrostatic_charge.user] run function recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/score
+execute as @a[tag=recondite.electrostatic_charge.tier2.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/electrostatic_charge/score
+execute as @a[tag=recondite.discharge.tier2.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/discharge/score
 execute as @a[tag=recondite.ignition.user] run function recondite:item/fire_elemental_spellbook/abilities/ignition/score
 execute as @a[tag=recondite.static.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/static/score
 execute as @a[tag=recondite.shock.victim] run function recondite:item/lightning_elemental_spellbook/abilities/electric_shock/victim
@@ -29,6 +32,8 @@ execute as @a[scores={recondite.fire_spell.value=0}] run scoreboard players add 
 execute as @a[scores={recondite.ender_spell.value=0}] run scoreboard players add @s recondite.ender_spell.value 1
 scoreboard players add @a recondite.misc 1
 
+execute as @a[tag=recondite.electrostatic_charge.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/end
+execute as @a[tag=recondite.electrostatic_charge.tier2.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/ablities_tier2/electrostatic_charge/end
 
 execute as @a[scores={recondite.misc=3..}] run scoreboard players reset @a recondite.misc
 

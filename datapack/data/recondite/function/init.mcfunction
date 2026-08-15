@@ -13,7 +13,8 @@ scoreboard objectives add recondite.lightning_switch.cooldown dummy
 scoreboard objectives add recondite.shock.cooldown dummy
 scoreboard objectives add recondite.flame_volley.cooldown dummy
 scoreboard objectives add recondite.ignition.cooldown dummy
-scoreboard objectives add recondite.charge.cooldown dummy
+scoreboard objectives add recondite.discharge.cooldown dummy
+scoreboard objectives add recondite.electrostatic_charge.cooldown dummy
 scoreboard objectives add recondite.static.cooldown dummy
 scoreboard objectives add recondite.magic.missile.cooldown dummy
 scoreboard objectives add recondite.magic.missile.user dummy
@@ -29,8 +30,9 @@ scoreboard objectives add recondite.ender_spell.value dummy
 scoreboard objectives add recondite.ender_spell.cooldown dummy
 
 scoreboard objectives add recondite.flame_volley.user dummy
-scoreboard objectives add recondite.charge.user dummy
-scoreboard objectives add recondite.charge.tier2.user dummy
+scoreboard objectives add recondite.discharge.user dummy
+scoreboard objectives add recondite.electrostatic_charge.user dummy
+scoreboard objectives add recondite.discharge.tier2.user dummy
 scoreboard objectives add recondite.static.user dummy
 scoreboard objectives add recondite.ignition.user dummy
 scoreboard objectives add recondite.shock.victim dummy

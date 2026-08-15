@@ -35,12 +35,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Charge || Tier 2 (20s)",
+                                    "translate": " Discharge || Tier 2 (20s)",
                                     "color": "#00a800",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Electric Shock || Tier 2 (15s)",
+                                    "translate": " Electrostatic Charge || Tier 2 (10s)",
                                     "color": "#00a800",
                                     "italic": false
                                 },
