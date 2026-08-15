@@ -41,7 +41,7 @@ execute as @e[type=item_display,tag=recondite.arcane_workbench_display] at @s ru
 execute as @e[type=marker,tag=recondite.arcane_workbench] at @s run function recondite:block/arcane_workbench/loop/marker
 
 execute as @e[type=item_display,name=magic.missile.display] at @s run tp @s ^ ^ ^0.4
-execute as @e[type=item_display,name=magic.missile.display] at @s run rotate @s facing entity @n[type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user] eyes
+execute as @e[type=item_display,name=magic.missile.display] at @s run rotate @s facing entity @n[type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user,distance=..10] eyes
 
 execute as @e[type=item_display,name=magic.missile.display] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user] run function recondite:item/ender_elemental_spellbook/abilities/magic_missile/kill
 

@@ -1,2 +1,3 @@
-execute anchored eyes run summon item_display ^ ^ ^1 {CustomName:"magic.missile.display",item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"recondite:magic_missile"}}}
+execute anchored eyes run summon item_display ^ ^ ^-1 {CustomName:"magic.missile.display",item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"recondite:magic_missile"}}}
+execute as @n[type=item_display,name=magic.missile.display] run rotate @s facing entity @n[tag=recondite.magic.missile.user] eyes
 execute anchored eyes run particle minecraft:dragon_breath ^ ^ ^1 0.125 0.125 0.125 0.0625 25
