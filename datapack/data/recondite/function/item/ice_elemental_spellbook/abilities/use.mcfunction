@@ -1,0 +1,8 @@
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.icicle.cooldown=60..,recondite.ice_spell.value=1}] run function recondite:item/ice_elemental_spellbook/abilities/icicle/icicle
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.ignition.cooldown=500..,recondite.ice_spell.value=2}] run function recondite:item/fire_elemental_spellbook/abilities/ignition/ignition
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=160..,recondite.ice_spell.value=3}] run function recondite:item/fire_elemental_spellbook/abilities/flame_volley/use
+execute if predicate recondite:is_sneaking as @s[scores={recondite.ice_switch.cooldown=5..}] run function recondite:item/ice_elemental_spellbook/spell_switch/tier_1
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.icicle.cooldown=..59,recondite.ice_spell.value=1}] run title @s actionbar {"text":"Spell under Cooldown "}
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.ignition.cooldown=..499,recondite.ice_spell.value=2}] run title @s actionbar {"text":"Spell under Cooldown "}
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=..159,recondite.ice_spell.value=3}] run title @s actionbar {"text":"Spell under Cooldown "}
+advancement revoke @s only recondite:main/item/use_ice_elemental_spellbook_tier_1

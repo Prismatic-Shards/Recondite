@@ -4,7 +4,9 @@ scoreboard objectives add MotionZ dummy
 
 scoreboard objectives add recondite.fireball.cooldown dummy
 scoreboard objectives add recondite.fire_switch.cooldown dummy
+scoreboard objectives add recondite.ice_switch.cooldown dummy
 scoreboard objectives add recondite.ender_switch.cooldown dummy
+scoreboard objectives add recondite.ice_switch.cooldown dummy
 scoreboard objectives add recondite.lightning.cooldown dummy
 scoreboard objectives add recondite.wither.cooldown dummy
 scoreboard objectives add recondite.vine.cooldown dummy
@@ -23,13 +25,16 @@ scoreboard objectives add recondite.teleport.cooldown dummy
 scoreboard objectives add recondite.teleport.distance dummy
 scoreboard objectives add recondite.microgravity.cooldown dummy
 scoreboard objectives add recondite.microgravity.user dummy
+scoreboard objectives add recondite.icicle.cooldown dummy
+scoreboard objectives add recondite.icicle.projectile dummy
+scoreboard objectives add recondite.icicle.user dummy
 
+scoreboard objectives add recondite.ice_spell.value dummy
 scoreboard objectives add recondite.fire_spell.value dummy
 scoreboard objectives add recondite.lightning_spell.value dummy
 scoreboard objectives add recondite.fire_spell.value2 dummy
 scoreboard objectives add recondite.ender_spell.value dummy
 
-scoreboard objectives add recondite.ender_spell.cooldown dummy
 
 scoreboard objectives add recondite.flame_volley.user dummy
 scoreboard objectives add recondite.discharge.user dummy
