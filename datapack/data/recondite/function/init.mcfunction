@@ -21,6 +21,8 @@ scoreboard objectives add recondite.magic.missile.user dummy
 scoreboard objectives add recondite.magic.missile.projectile dummy
 scoreboard objectives add recondite.teleport.cooldown dummy
 scoreboard objectives add recondite.teleport.distance dummy
+scoreboard objectives add recondite.microgravity.cooldown dummy
+scoreboard objectives add recondite.microgravity.user dummy
 
 scoreboard objectives add recondite.fire_spell.value dummy
 scoreboard objectives add recondite.lightning_spell.value dummy

@@ -15,6 +15,7 @@ scoreboard players add @a recondite.shock.cooldown 1
 scoreboard players add @a recondite.static.cooldown 1
 scoreboard players add @a recondite.magic.missile.cooldown 1
 scoreboard players add @a recondite.teleport.cooldown 1
+scoreboard players add @a recondite.microgravity.cooldown 1
 scoreboard players add @e[type=item_display,name=magic.missile.display] recondite.magic.missile.projectile 1
 scoreboard players add @a[tag=recondite.magic.missile.user] recondite.magic.missile.user 1
 
@@ -30,7 +31,13 @@ execute as @a[tag=recondite.shock.victim] run function recondite:item/lightning_
 execute as @a[scores={recondite.lightning_spell.value=0}] run scoreboard players add @s recondite.lightning_spell.value 1
 execute as @a[scores={recondite.fire_spell.value=0}] run scoreboard players add @s recondite.fire_spell.value 1
 execute as @a[scores={recondite.ender_spell.value=0}] run scoreboard players add @s recondite.ender_spell.value 1
+execute as @a[tag=recondite.microgravity.user] run scoreboard players add @s recondite.microgravity.user 1
+execute as @a[tag=recondite.microgravity.victim] run scoreboard players add @s recondite.microgravity.user 1
+execute as @a[tag=recondite.microgravity.user,scores={recondite.microgravity.user=100..}] run function recondite:item/ender_elemental_spellbook/abilities/microgravity/end
+execute as @a[tag=recondite.microgravity.victim,scores={recondite.microgravity.user=60..}] run function recondite:item/ender_elemental_spellbook/abilities/microgravity/end
 scoreboard players add @a recondite.misc 1
+
+execute as @a[tag=recondite.microgravity.user] anchored feet at @s run particle minecraft:dragon_breath ~ ~ ~ 0.1 0 0.1 0.03125 5 force
 
 execute as @a[tag=recondite.electrostatic_charge.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/end
 execute as @a[tag=recondite.electrostatic_charge.tier2.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/ablities_tier2/electrostatic_charge/end
@@ -41,7 +48,7 @@ execute as @e[type=item_display,tag=recondite.arcane_workbench_display] at @s ru
 execute as @e[type=marker,tag=recondite.arcane_workbench] at @s run function recondite:block/arcane_workbench/loop/marker
 
 execute as @e[type=item_display,name=magic.missile.display] at @s run tp @s ^ ^ ^0.4
-execute as @e[type=item_display,name=magic.missile.display] at @s run rotate @s facing entity @n[type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user,distance=..10] eyes
+execute as @e[type=item_display,name=magic.missile.display] if score @s recondite.magic.missile.projectile matches 20.. at @s run rotate @s facing entity @n[type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user,distance=..10] eyes
 
 execute as @e[type=item_display,name=magic.missile.display] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.magic.missile.user] run function recondite:item/ender_elemental_spellbook/abilities/magic_missile/kill
 

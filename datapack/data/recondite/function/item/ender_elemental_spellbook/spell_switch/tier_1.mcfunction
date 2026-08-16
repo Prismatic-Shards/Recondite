@@ -5,4 +5,4 @@ execute as @s[scores={recondite.ender_spell.value=4..}] run scoreboard players s
 
 title @s[scores={recondite.ender_spell.value=1}] actionbar ["",{"text":"Spell is now "},{"text":"Magic Missile","color":"yellow"}]
 title @s[scores={recondite.ender_spell.value=2}] actionbar ["",{"text":"Spell is now "},{"text":"Teleportation","color":"yellow"}]
-title @s[scores={recondite.ender_spell.value=3}] actionbar ["",{"text":"Spell is now "},{"text":"N/A","color":"yellow"}]
+title @s[scores={recondite.ender_spell.value=3}] actionbar ["",{"text":"Spell is now "},{"text":"Microgravity","color":"yellow"}]

@@ -7,7 +7,7 @@
           "type": "minecraft:model",
           "model": "recondite:item/lightning_spellbook_3d"
         },
-        "when": ["firstperson_lefthand", "firstperson_righthand", "thirdperson_lefthand", "thirdperson_righthand"]
+        "when": ["firstperson_lefthand", "firstperson_righthand", "thirdperson_lefthand", "thirdperson_righthand", "ground"]
       }
     ],
     "fallback": {
