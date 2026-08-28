@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:fletching_table",
+                    "name": "minecraft:crying_obsidian",
                     "conditions": [],
                     "functions": [
                         {

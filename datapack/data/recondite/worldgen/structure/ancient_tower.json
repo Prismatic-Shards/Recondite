@@ -2,7 +2,7 @@
   "type": "minecraft:jigsaw",
   "biomes": "#recondite:has_structure/ancient_tower",
   "step": "surface_structures",
-  "terrain_adaptation": "none",
+  "terrain_adaptation": "beard_box",
   "spawn_overrides": {},
   "start_pool": "recondite:ancient_tower",
   "size": 1,

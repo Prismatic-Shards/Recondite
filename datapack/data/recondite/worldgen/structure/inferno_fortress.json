@@ -2,7 +2,7 @@
   "type": "minecraft:jigsaw",
   "biomes": "#recondite:has_structure/inferno_fortress",
   "step": "surface_structures",
-  "terrain_adaptation": "none",
+  "terrain_adaptation": "beard_box",
   "spawn_overrides": {},
   "start_pool": "recondite:inferno_fortress",
   "size": 1,

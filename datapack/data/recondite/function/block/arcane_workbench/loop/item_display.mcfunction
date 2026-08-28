@@ -1,1 +1,1 @@
-execute unless block ~ ~ ~ minecraft:fletching_table run function recondite:block/arcane_workbench/drop
+execute unless block ~ ~ ~ minecraft:crying_obsidian run function recondite:block/arcane_workbench/drop

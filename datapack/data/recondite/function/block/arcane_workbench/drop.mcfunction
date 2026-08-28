@@ -1,6 +1,6 @@
 kill @s
 
-kill @n[type=item,nbt={Item:{id:"minecraft:fletching_table"}}]
+kill @n[type=item,nbt={Item:{id:"minecraft:crying_obsidian"}}]
 execute positioned ~ ~1 ~ run kill @n[type=marker,distance=..0.01,tag=recondite.arcane_workbench]
 
 loot spawn ~ ~ ~ loot recondite:block/arcane_workbench

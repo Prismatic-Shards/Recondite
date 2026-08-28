@@ -8,7 +8,7 @@
           {
             "condition": "minecraft:match_tool",
             "predicate": {
-              "items": ["minecraft:fletching_table"],
+              "items": ["minecraft:crying_obsidian"],
               "predicates": {
                 "minecraft:custom_data": {
                   "recondite:item": "arcane_workbench"
