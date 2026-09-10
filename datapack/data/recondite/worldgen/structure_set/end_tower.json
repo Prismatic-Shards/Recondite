@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "recondite:end_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 85,
+    "separation": 50,
+    "salt": 0
+  }
+}

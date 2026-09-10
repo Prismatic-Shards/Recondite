@@ -72,3 +72,7 @@ execute as @e[type=item_display,name=icicle.display] at @s run execute unless bl
 execute as @e[type=item_display,name=icicle.display,scores={recondite.icicle.projectile=40..}] at @s run function recondite:item/ice_elemental_spellbook/abilities/icicle/kill
 execute as @e[tag=recondite.icicle.user,scores={recondite.icicle.user=20..}] run function recondite:item/ice_elemental_spellbook/abilities/icicle/tag_remove
 execute as @e[type=item_display,name=icicle.display] at @s run tp @s ^ ^ ^0.75
+execute as @e[tag=recondite.freezing.victim] run scoreboard players add @s recondite.freezing.victim 1
+execute as @e[tag=recondite.freezing.victim] run function recondite:item/ice_elemental_spellbook/freezing
+
+execute as @e[tag=!recondite.freezing.victim] run scoreboard players reset @s recondite.freezing.victim

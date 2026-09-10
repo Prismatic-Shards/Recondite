@@ -148,7 +148,12 @@
           "type": "minecraft:loot_table",
           "value": "recondite:item/books/lightning_elemental_spellbook"
         }
-      ]
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.0,
+        "min": 0.0
+      }
     }
   ],
   "random_sequence": "recondite:chests/ancient_tower_chest"
