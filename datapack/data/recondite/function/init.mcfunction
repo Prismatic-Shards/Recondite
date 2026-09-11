@@ -30,6 +30,7 @@ scoreboard objectives add recondite.icicle.projectile dummy
 scoreboard objectives add recondite.icicle.user dummy
 scoreboard objectives add recondite.freezing.victim dummy
 scoreboard objectives add recondite.frostbite.cooldown dummy
+scoreboard objectives add recondite.iceshock.cooldown dummy
 
 scoreboard objectives add recondite.ice_spell.value dummy
 scoreboard objectives add recondite.fire_spell.value dummy

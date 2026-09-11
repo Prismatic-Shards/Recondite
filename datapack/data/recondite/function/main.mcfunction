@@ -21,7 +21,8 @@ scoreboard players add @a recondite.teleport.cooldown 1
 scoreboard players add @a recondite.microgravity.cooldown 1
 
 scoreboard players add @a recondite.icicle.cooldown 1
-scoreboard players add @a recondite.frostbite.cooldown 1
+scoreboard players add @a[tag=!recondite.frostbite.user] recondite.frostbite.cooldown 1
+scoreboard players add @a recondite.iceshock.cooldown 1
 
 execute at @a[tag=recondite.frostbite.user] run particle minecraft:snowflake ~ ~0.5 ~ 0.2 0.2 0.2 0.01 5
 
