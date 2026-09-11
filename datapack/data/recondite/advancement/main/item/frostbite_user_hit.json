@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "recondite:item/ice_elemental_spellbook/abilities/frostbite/check"
+  }
+}

@@ -29,6 +29,7 @@ scoreboard objectives add recondite.icicle.cooldown dummy
 scoreboard objectives add recondite.icicle.projectile dummy
 scoreboard objectives add recondite.icicle.user dummy
 scoreboard objectives add recondite.freezing.victim dummy
+scoreboard objectives add recondite.frostbite.cooldown dummy
 
 scoreboard objectives add recondite.ice_spell.value dummy
 scoreboard objectives add recondite.fire_spell.value dummy
@@ -47,6 +48,8 @@ scoreboard objectives add recondite.shock.victim dummy
 
 scoreboard objectives add recondite.misc dummy
 scoreboard objectives add recondite.arcane_workbench.count dummy
+
+team add recondite.frostbite.hit
 
 function recondite:util/stringlib/zprivate/load
 

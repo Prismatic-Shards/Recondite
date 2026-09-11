@@ -1,0 +1,2 @@
+execute if entity @s[tag=recondite.frostbite.user] run function recondite:item/ice_elemental_spellbook/abilities/frostbite/effect_apply
+advancement revoke @s only recondite:main/item/frostbite_user_hit
