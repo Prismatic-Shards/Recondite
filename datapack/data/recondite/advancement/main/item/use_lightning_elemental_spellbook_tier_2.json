@@ -5,11 +5,15 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "player": {
-          "equipment": {
-            "mainhand": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "recondite:item": "lightning_elemental_spellbook_tier2"
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "recondite:item": "lightning_elemental_spellbook_tier2"
+                  }
                 }
               }
             }

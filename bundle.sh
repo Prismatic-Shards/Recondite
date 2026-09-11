@@ -9,7 +9,7 @@ rm -rf artifacts/${version}
 mkdir -p artifacts/${version}
 
 cd datapack/
-zip -r ../artifacts/${version}/Recondite-${version}.zip data/ pack.mcmeta pack.png
+zip -r ../artifacts/${version}/Recondite-${version}.zip data/ overlay_26_2/ pack.mcmeta pack.png
 cp ../artifacts/${version}/Recondite-${version}.zip ../artifacts/${version}/mod.zip
 
 cd ../resource_pack

@@ -2,13 +2,22 @@
     "pack": {
         "id": "Recondite",
         "color": "#59ff44",
-        "min_format": 107.1,
-        "max_format": 107.1,
+        "min_format": [94, 1],
+        "max_format": [121, 1],
         "description": [
             {
                 "text": "Recondite introduces spellbooks that are infused with magical abilities",
                 "color": "#ffffff"
             }
         ]
-    }
+    },
+    "overlays": {
+    "entries": [
+      {
+        "directory": "overlay_26_2",
+        "min_format": [94, 1],
+        "max_format": [107, 1]
+      }
+    ]
+  }
 }

@@ -6,10 +6,9 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:crying_obsidian",
-                    "conditions": [],
-                    "functions": [
+                    "modifier": [
                         {
-                            "function": "minecraft:set_components",
+                            "type": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_name": "Arcane Workbench",
                                 "minecraft:item_model": "recondite:arcane_workbench",

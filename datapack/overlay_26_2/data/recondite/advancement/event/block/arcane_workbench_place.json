@@ -1,0 +1,26 @@
+{
+  "parent": "recondite:main/item/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:crying_obsidian"],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "recondite:item": "arcane_workbench"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "recondite:block/arcane_workbench/place"
+  }
+}

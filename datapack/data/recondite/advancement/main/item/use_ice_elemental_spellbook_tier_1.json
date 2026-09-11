@@ -5,11 +5,15 @@
       "trigger": "minecraft:using_item",
       "conditions": {
         "player": {
-          "equipment": {
-            "mainhand": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "recondite:item": "ice_elemental_spellbook"
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "recondite:item": "ice_elemental_spellbook"
+                  }
                 }
               }
             }

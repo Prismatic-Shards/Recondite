@@ -7,10 +7,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gunpowder",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 7,
                 "max": 16
               }
@@ -25,10 +26,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:charcoal",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 7,
                 "max": 16
               }
@@ -43,10 +45,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:fire_charge",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 2,
                 "max": 6
               }
@@ -61,10 +64,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:book",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 2,
                 "max": 3
               }
@@ -79,10 +83,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 3,
                 "max": 5
               }
@@ -112,8 +117,8 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 4.0,
-        "min": 0.0
+        "max": 4,
+        "min": 0
       }
     }
   ],

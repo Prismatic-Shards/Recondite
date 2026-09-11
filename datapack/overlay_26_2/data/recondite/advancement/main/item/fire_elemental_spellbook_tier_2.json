@@ -1,0 +1,24 @@
+{
+  "parent": "recondite:main/item/root",
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "recondite:item": "fire_elemental_spellbook_tier_2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "recondite:item/fire_elemental_spellbook/abilities/tier_2/use"
+  }
+}

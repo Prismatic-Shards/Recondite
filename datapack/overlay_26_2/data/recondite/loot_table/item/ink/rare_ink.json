@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "weight": 1,
+          "conditions": [],
+          "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                {
+                                    "translate": "Rare Ink",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "Used to upgrade Spellbooks",
+                                    "color": "#a8a8a8",
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this",
+                            "mode": "replace_all" 
+                        },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "recondite:rare_ink",
+                "minecraft:custom_data": {
+                  "recondite:item": "rare_ink"
+                },
+                "rarity":"uncommon"
+              }
+            }
+        ]
+              }
+            ]
+            }
+          ]
+        }

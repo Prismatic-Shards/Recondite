@@ -9,42 +9,41 @@
           "type": "minecraft:item",
           "name": "minecraft:jigsaw",
           "weight": 1,
-          "conditions": [],
-          "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "translate": "Epic Ink",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "translate": "Used to upgrade Spellbooks",
-                                    "color": "#a8a8a8",
-                                    "italic": false
-                                }
-                            ],
-                            "entity": "this",
-                            "mode": "replace_all" 
-                        },
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Epic Ink",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Used to upgrade Spellbooks",
+                  "color": "#a8a8a8",
+                  "italic": false
+                }
+              ],
+              "entity": "this",
+              "mode": "replace_all"
+            },
+            {
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "recondite:epic_ink",
                 "minecraft:custom_data": {
                   "recondite:item": "epic_ink"
                 },
-                "rarity":"uncommon"
+                "rarity": "uncommon"
               }
-            }
-        ]
-              }
-            ]
             }
           ]
         }
+      ]
+    }
+  ]
+}
