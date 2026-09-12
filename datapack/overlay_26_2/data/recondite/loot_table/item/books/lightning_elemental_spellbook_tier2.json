@@ -63,6 +63,13 @@
                                     "translate": " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
+                                },
+                                "",
+                                {
+                                    "translate": "Recondite",
+                                    "color": "#d8e4ec",
+                                    "font": "recondite:tooltip",
+                                    "italic": false
                                 }
                             ],
                             "entity": "this",
