@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:equipment": {
+      "offhand": {
+        "items": "minecraft:jigsaw",
+        "components": {
+          "minecraft:custom_data": {
+                  "recondite:item": "thorn_ring"
+                }
+        }
+      }
+    }
+  }
+}
