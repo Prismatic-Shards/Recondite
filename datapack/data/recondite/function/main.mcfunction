@@ -23,6 +23,7 @@ scoreboard players add @a recondite.microgravity.cooldown 1
 scoreboard players add @a recondite.icicle.cooldown 1
 scoreboard players add @a[tag=!recondite.frostbite.user] recondite.frostbite.cooldown 1
 scoreboard players add @a recondite.iceshock.cooldown 1
+scoreboard players add @a recondite.snowgrave.cooldown 1
 
 execute at @a[tag=recondite.frostbite.user] run particle minecraft:snowflake ~ ~0.5 ~ 0.2 0.2 0.2 0.01 5
 
@@ -30,6 +31,42 @@ scoreboard players add @e[type=item_display,name=magic.missile.display] recondit
 scoreboard players add @e[type=item_display,name=icicle.display] recondite.icicle.projectile 1
 scoreboard players add @a[tag=recondite.magic.missile.user] recondite.magic.missile.user 1
 scoreboard players add @a[tag=recondite.icicle.user] recondite.icicle.user 1
+
+execute as @a[tag=recondite.snowgrave.user] run scoreboard players add @s recondite.snowgrave.user 1 
+execute as @e[tag=recondite.snowgrave.victim] run scoreboard players add @s recondite.snowgrave.victim 1
+execute as @e[tag=recondite.snowgrave.victim] run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/victim_check
+execute as @a[tag=recondite.snowgrave.user] run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/user_check
+execute as @a[tag=!recondite.snowgrave.user] run scoreboard players reset @s recondite.snowgrave.user
+execute as @e[tag=!recondite.snowgrave.victim] run scoreboard players reset @s recondite.snowgrave.victim
+
+execute as @a[tag=recondite.snowgrave.user] at @s run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/sound
+execute as @a if predicate recondite:thorn_ring_offhand run tag @s add recondite.thorn.equip
+execute as @a[tag=recondite.thorn.equip] run scoreboard players add @s recondite.thornring.equip 1
+execute as @a[tag=recondite.thorn.equip,scores={recondite.thornring.equip=1}] run title @s actionbar {"text":"Endure the pain to be stronger... ","color":"yellow"}
+execute as @a[tag=recondite.thorn.equip,scores={recondite.thornring.equip=1}] run damage @s 1 magic
+execute as @a unless predicate recondite:thorn_ring_offhand run tag @s remove recondite.thorn.equip
+execute as @a unless predicate recondite:thorn_ring_offhand run scoreboard players reset @s recondite.thornring.equip
+
+execute as @e[tag=recondite.snowgrave.victim] run execute store result score @s recondite.snowgrave.health.vicitm run data get entity @s Health
+execute as @e[tag=recondite.snowgrave.victim,scores={recondite.snowgrave.health.vicitm=..4}] run tag @s remove recondite.snowgrave.victim 
+execute as @e[type=marker,tag=recondite.snowgrave.marker.1] at @s unless entity @e[tag=recondite.snowgrave.victim,distance=..4] run kill @s
+execute as @e[type=marker,tag=recondite.snowgrave.marker.2] at @s unless entity @e[tag=recondite.snowgrave.victim,distance=..4] run kill @s
+execute as @a[tag=recondite.snowgrave.user,scores={recondite.snowgrave.user=5..}] at @s unless entity @e[type=marker,tag=recondite.snowgrave.marker.1,distance=1..] run scoreboard players set @s recondite.snowgrave.user 201
+
+execute at @e[tag=recondite.snowgrave.victim] as @e[distance=..9,tag=!recondite.snowgrave.victim,tag=!recondite.snowgrave.user] run tag @s add recondite.freezing.victim
+
+execute at @e[tag=recondite.snowgrave.victim] run particle snowflake ~ ~ ~ 4 4 4 0.08 250
+execute positioned as @e[tag=recondite.snowgrave.victim,limit=1] as @e[type=marker,tag=recondite.snowgrave.marker.1] at @s run tp @s ~ ~1 ~ ~30 ~
+execute at @e[type=marker,tag=recondite.snowgrave.marker.1] run particle snowflake ^ ^ ^1 0.01 3 0.01 0.08 50
+execute at @e[type=marker,tag=recondite.snowgrave.marker.1] rotated ~120 ~ run particle snowflake ^ ^ ^1 0.01 3 0.01 0.08 50
+execute at @e[type=marker,tag=recondite.snowgrave.marker.1] rotated ~240 ~ run particle snowflake ^ ^ ^1 0.01 3 0.01 0.08 50
+execute at @e[tag=recondite.snowgrave.victim] run tp @e[tag=recondite.snowgrave.marker.1] ~ ~ ~
+
+execute positioned as @e[tag=recondite.snowgrave.victim,limit=1] as @e[type=marker,tag=recondite.snowgrave.marker.2] at @s run tp @s ~ ~1 ~ ~5 ~
+execute at @e[type=marker,tag=recondite.snowgrave.marker.2] run particle snowflake ^ ^ ^10 0.01 3 0.01 0.15 100
+execute at @e[type=marker,tag=recondite.snowgrave.marker.2] rotated ~120 ~ run particle snowflake ^ ^ ^10 0.01 3 0.01 0.15 100
+execute at @e[type=marker,tag=recondite.snowgrave.marker.2] rotated ~240 ~ run particle snowflake ^ ^ ^10 0.01 3 0.01 0.15 100
+execute at @e[tag=recondite.snowgrave.victim] run tp @e[tag=recondite.snowgrave.marker.2] ~ ~ ~
 
 execute as @a[tag=recondite.flame_volley.user] run function recondite:item/fire_elemental_spellbook/abilities/flame_volley/score
 execute as @a[tag=recondite.flame_volley.user2] run function recondite:item/fire_elemental_spellbook/abilities/tier_2/flame_volley/score

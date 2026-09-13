@@ -31,7 +31,12 @@ scoreboard objectives add recondite.icicle.user dummy
 scoreboard objectives add recondite.freezing.victim dummy
 scoreboard objectives add recondite.frostbite.cooldown dummy
 scoreboard objectives add recondite.iceshock.cooldown dummy
-
+scoreboard objectives add recondite.snowgrave.cooldown dummy
+scoreboard objectives add recondite.snowgrave.user dummy
+scoreboard objectives add recondite.snowgrave.victim dummy
+scoreboard objectives add recondite.snowgrave.health health
+scoreboard objectives add recondite.snowgrave.health.vicitm dummy
+scoreboard objectives add recondite.thornring.equip dummy
 scoreboard objectives add recondite.ice_spell.value dummy
 scoreboard objectives add recondite.fire_spell.value dummy
 scoreboard objectives add recondite.lightning_spell.value dummy

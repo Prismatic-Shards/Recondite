@@ -8,6 +8,4 @@ playsound entity.snow_golem.death master @a ~ ~ ~ 1 1.5
 playsound entity.player.hurt_freeze master @a ~ ~ ~
 playsound block.glass.break master @a ~ ~ ~ 1 0.7
 scoreboard players reset @s recondite.iceshock.cooldown
-
-#this function isnt broken its just showing up as red 
-#idk why but it works so dont touch it or smth
+tag @s remove recondite.iceshock.user
