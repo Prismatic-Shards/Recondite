@@ -1,0 +1,36 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "recondite:item/magic_missile",
+		"particle": "recondite:item/magic_missile"
+	},
+	"elements": [
+		{
+			"from": [4, 6, 7],
+			"to": [12, 8, 9],
+			"rotation": {"x": 0, "y": 90, "z": 0, "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#0"},
+				"east": {"uv": [0, 8, 2, 10], "texture": "#0"},
+				"south": {"uv": [0, 2, 8, 4], "texture": "#0"},
+				"west": {"uv": [8, 0, 10, 2], "texture": "#0"},
+				"up": {"uv": [8, 6, 0, 4], "texture": "#0"},
+				"down": {"uv": [8, 6, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 8, 9],
+			"to": [4, 6, 7],
+			"rotation": {"x": 0, "y": -90, "z": -90, "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#0"},
+				"east": {"uv": [0, 8, 2, 10], "texture": "#0"},
+				"south": {"uv": [0, 2, 8, 4], "texture": "#0"},
+				"west": {"uv": [8, 0, 10, 2], "texture": "#0"},
+				"up": {"uv": [8, 6, 0, 4], "texture": "#0"},
+				"down": {"uv": [8, 6, 0, 8], "texture": "#0"}
+			}
+		}
+	]
+}

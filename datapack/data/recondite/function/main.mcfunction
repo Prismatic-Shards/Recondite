@@ -107,7 +107,7 @@ execute as @e[type=item_display,name=magic.missile.display,scores={recondite.mag
 execute as @e[tag=recondite.magic.missile.user,scores={recondite.magic.missile.user=100..}] run function recondite:item/ender_elemental_spellbook/abilities/magic_missile/tag_remove
 execute at @e[type=item_display,name=magic.missile.display] run particle dragon_breath ~ ~ ~ 0.125 0.125 0.125 0.01 5 force
 
-execute at @e[type=item_display,name=icicle.display] anchored eyes run particle minecraft:snowflake ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute at @e[type=item_display,name=icicle.display] anchored eyes run particle minecraft:snowflake ^ ^ ^-0.2 0.125 0.125 0.125 0.01 4 force
 execute as @e[type=item_display,name=icicle.display] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.icicle.user] run function recondite:item/ice_elemental_spellbook/abilities/icicle/kill
 execute as @e[type=item_display,name=icicle.display] at @s run execute unless block ~ ~ ~ air run function recondite:item/ice_elemental_spellbook/abilities/icicle/kill
 execute as @e[type=item_display,name=icicle.display,scores={recondite.icicle.projectile=40..}] at @s run function recondite:item/ice_elemental_spellbook/abilities/icicle/kill

@@ -1,0 +1,11 @@
+{
+    "item.electrostatic_charge": {
+    "sounds": ["recondite:item/electrostatic_charge"]
+  },
+    "item.snowgrave_sfx": {
+    "sounds": ["recondite:item/snowgrave_sfx"]
+  },
+    "item.thornring_craft": {
+    "sounds": ["recondite:item/thornring_craft"]
+  }
+}

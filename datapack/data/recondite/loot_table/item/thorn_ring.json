@@ -60,7 +60,7 @@
                 "minecraft:custom_data": {
                   "recondite:item": "thorn_ring"
                 },
-                "rarity": "common"
+                "max_stack_size": 1
               }
             }
           ]

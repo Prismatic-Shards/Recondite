@@ -25,3 +25,4 @@ if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.e
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.end_crystal,scores={recondite.arcane_workbench.count=1}] \
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.book,scores={recondite.arcane_workbench.count=1}] \
 run function recondite:block/arcane_workbench/crafting/craft/special/craft_end_book
+

@@ -13,3 +13,13 @@ if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.u
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.gold_ingot,scores={recondite.arcane_workbench.count=1}] \
 run function recondite:block/arcane_workbench/crafting/craft/craft_ink {loot:"recondite:item/ink/rare_ink"}
 
+
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.rare_ink,scores={recondite.arcane_workbench.count=4}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.emerald,scores={recondite.arcane_workbench.count=2}] \
+run function recondite:block/arcane_workbench/crafting/craft/craft_ink {loot:"recondite:item/ink/epic_ink"}
+
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.epic_ink,scores={recondite.arcane_workbench.count=4}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.diamond,scores={recondite.arcane_workbench.count=2}] \
+run function recondite:block/arcane_workbench/crafting/craft/craft_ink {loot:"recondite:item/ink/legendary_ink"}
