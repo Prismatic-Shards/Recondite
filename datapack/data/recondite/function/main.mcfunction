@@ -42,7 +42,7 @@ execute as @e[tag=!recondite.snowgrave.victim] run scoreboard players reset @s r
 execute as @a[tag=recondite.snowgrave.user] at @s run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/sound
 execute as @a if predicate recondite:thorn_ring_offhand run tag @s add recondite.thorn.equip
 execute as @a[tag=recondite.thorn.equip] run scoreboard players add @s recondite.thornring.equip 1
-execute as @a[tag=recondite.thorn.equip,scores={recondite.thornring.equip=1}] run title @s actionbar {"text":"Endure the pain to be stronger... ","color":"yellow"}
+execute as @a[tag=recondite.thorn.equip,scores={recondite.thornring.equip=1}] run title @s actionbar [{"color":"yellow","fallback":"Endure the pain to be stronger...","translate":"message.recondite.equip_thorn_ring"}," "]
 execute as @a[tag=recondite.thorn.equip,scores={recondite.thornring.equip=1}] run damage @s 1 magic
 execute as @a unless predicate recondite:thorn_ring_offhand run tag @s remove recondite.thorn.equip
 execute as @a unless predicate recondite:thorn_ring_offhand run scoreboard players reset @s recondite.thornring.equip

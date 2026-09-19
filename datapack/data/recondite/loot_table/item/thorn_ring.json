@@ -14,7 +14,8 @@
               "type": "minecraft:set_name",
               "name": [
                 {
-                  "translate": "Thorn Ring",
+                  "translate": "item.recondite.thorn_ring",
+                  "fallback": "Thorn Ring",
                   "color": "#fcfc54",
                   "italic": false
                 }
@@ -24,31 +25,45 @@
               "type": "minecraft:set_lore",
               "lore": [
                 {
-                  "translate": "A Commemorative Ring",
+                  "translate": "item.recondite.thorn_ring.description.1",
+                  "fallback": "A Commemorative Ring",
                   "color": "#5454fc",
                   "italic": false
                 },
                 "",
                 {
-                  "translate": "When in Offhand:",
+                  "translate": "items.recondite.in_offhand",
+                  "fallback": "When in Offhand:",
                   "color": "#a8a8a8",
                   "italic": false
                 },
-                {
-                  "translate": " 30% Damage increase for Ice Spells",
-                  "color": "#5454fc",
-                  "italic": false
-                },
-                {
-                  "translate": " New Spell Unlocked",
-                  "color": "#5454fc",
-                  "italic": false
-                },
-                {
-                  "translate": " Inflicts damage when casting spells",
-                  "color": "#ff5555",
-                  "italic": false
-                }
+                [
+                  "",
+                  {
+                    "translate": "item.recondite.thorn_ring.description.2",
+                    "fallback": "30% Damage increase for Ice Spells",
+                    "color": "#5454fc",
+                    "italic": false
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "translate": "item.recondite.thorn_ring.description.3",
+                    "fallback": "New Spell Unlocked",
+                    "color": "#5454fc",
+                    "italic": false
+                  }
+                ],
+                [
+                  "",
+                  {
+                    "translate": "item.recondite.thorn_ring.description.4",
+                    "fallback": "Inflicts damage when casting spells",
+                    "color": "#ff5555",
+                    "italic": false
+                  }
+                ]
               ],
               "entity": "this",
               "mode": "replace_all"

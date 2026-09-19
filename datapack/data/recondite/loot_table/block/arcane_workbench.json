@@ -1,25 +1,28 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:crying_obsidian",
-                    "modifier": [
-                        {
-                            "type": "minecraft:set_components",
-                            "components": {
-                                "minecraft:item_name": "Arcane Workbench",
-                                "minecraft:item_model": "recondite:arcane_workbench",
-                                "minecraft:custom_data": {
-                                    "recondite:item": "arcane_workbench"
-                                }
-                            }
-                        }
-                    ]
+          "type": "minecraft:item",
+          "name": "minecraft:crying_obsidian",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "translate": "block.recondite.arcane_workbench",
+                  "fallback": "Arcane Workbench"
+                },
+                "minecraft:item_model": "recondite:arcane_workbench",
+                "minecraft:custom_data": {
+                  "recondite:item": "arcane_workbench"
                 }
-            ]
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -4,9 +4,9 @@ execute unless predicate recondite:is_sneaking as @s[scores={recondite.iceshock.
 execute if predicate recondite:thorn_ring_offhand unless predicate recondite:is_sneaking as @s[scores={recondite.snowgrave.cooldown=200..,recondite.ice_spell.value=4,recondite.snowgrave.health=11..}] run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/check
 execute if predicate recondite:thorn_ring_offhand unless predicate recondite:is_sneaking unless score @s recondite.ice_spell.value matches 4 run damage @s 2 magic
 execute if predicate recondite:is_sneaking as @s[scores={recondite.ice_switch.cooldown=5..}] run function recondite:item/ice_elemental_spellbook/spell_switch/tier_1
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.icicle.cooldown=..59,recondite.ice_spell.value=1}] run title @s actionbar {"text":"Spell under Cooldown "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.frostbite.cooldown=..299,recondite.ice_spell.value=2}] run title @s actionbar {"text":"Spell under Cooldown "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.iceshock.cooldown=..399,recondite.ice_spell.value=3}] run title @s actionbar {"text":"Spell under Cooldown "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.snowgrave.cooldown=..19,recondite.ice_spell.value=4}] run title @s actionbar {"text":"Snowgrave was used up... "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.ice_spell.value=4,recondite.snowgrave.health=..10}] run title @s actionbar {"text":"Too weak... "}
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.icicle.cooldown=..59,recondite.ice_spell.value=1}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.frostbite.cooldown=..299,recondite.ice_spell.value=2}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.iceshock.cooldown=..399,recondite.ice_spell.value=3}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.snowgrave.cooldown=..19,recondite.ice_spell.value=4}] run title @s actionbar [{"fallback":"Snowgrave was used up...","translate":"message.recondite.snowgrave_used"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.ice_spell.value=4,recondite.snowgrave.health=..10}] run title @s actionbar [{"fallback":"Too weak...","translate":"message.recondite.snowgrave_weak"}," "]
 advancement revoke @s only recondite:main/item/use_ice_elemental_spellbook_tier_1

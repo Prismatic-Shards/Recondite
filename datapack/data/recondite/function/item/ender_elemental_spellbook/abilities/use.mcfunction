@@ -2,7 +2,7 @@ execute unless predicate recondite:is_sneaking as @s[scores={recondite.magic.mis
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.teleport.cooldown=400..,recondite.ender_spell.value=2}] run function recondite:item/ender_elemental_spellbook/abilities/teleport/use
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.microgravity.cooldown=600..,recondite.ender_spell.value=3}] run function recondite:item/ender_elemental_spellbook/abilities/microgravity/microgravity
 execute if predicate recondite:is_sneaking as @s[scores={recondite.ender_switch.cooldown=5..}] run function recondite:item/ender_elemental_spellbook/spell_switch/tier_1
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.magic.missile.cooldown=..159,recondite.ender_spell.value=1}] run title @s actionbar {"text":"Spell under Cooldown "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.teleport.cooldown=..399,recondite.ender_spell.value=2}] run title @s actionbar {"text":"Spell under Cooldown "}
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.microgravity.cooldown=..599,recondite.ender_spell.value=3}] run title @s actionbar {"text":"Spell under Cooldown "}
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.magic.missile.cooldown=..159,recondite.ender_spell.value=1}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.teleport.cooldown=..399,recondite.ender_spell.value=2}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.microgravity.cooldown=..599,recondite.ender_spell.value=3}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
 advancement revoke @s only recondite:main/item/use_ender_elemental_spellbook_tier_1

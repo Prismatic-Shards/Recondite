@@ -14,7 +14,8 @@
               "type": "minecraft:set_name",
               "name": [
                 {
-                  "translate": "Epic Ink",
+                  "translate": "item.recondite.epic_ink",
+                  "fallback": "Epic Ink",
                   "italic": false
                 }
               ]
@@ -23,7 +24,8 @@
               "type": "minecraft:set_lore",
               "lore": [
                 {
-                  "translate": "Used to upgrade Spellbooks",
+                  "translate": "items.recondite.ink_upgrade",
+                  "fallback": "Used to upgrade Spellbooks",
                   "color": "#a8a8a8",
                   "italic": false
                 }
