@@ -15,7 +15,8 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "translate": "Ice Elemental Spellbook",
+                                    "translate": "item.recondite.ice_elemental_spellbook",
+                                    "fallback": "Ice Elemental Spellbook",
                                     "color": "#fcfc54",
                                     "italic": false
                                 }
@@ -25,37 +26,92 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "Spellbook imbued with Freezing Winds",
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.recondite.ice_elemental_spellbook.description.1",
+                                    "fallback" : "Spellbook imbued with Freezing Winds",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
-                                {
-                                    "translate": " Icicle || Tier 1 (3s)",
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.ice_elemental_spellbook.icicle",
+                                    "fallback" : " Icicle || ",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Frostbite || Tier 1 (15s)",
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Ice Shock || Tier 1 (20s)",
+                                    },
+                                    {
+                                    "translate": "(20s)",
                                     "color": "#00a800",
                                     "italic": false
-                                },
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.ice_elemental_spellbook.frostbite",
+                                    "fallback" : " Frostbite || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(25s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate":"item.recondite.ice_elemental_spellbook.ice_shock",
+                                    "fallback" : " Ice Shock || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate":"items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(8s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
                                 {
-                                    "translate": "When in Main Hand:",
+                                    "translate":"items.recondite.main_hand",
+                                    "fallback" : "When in Main Hand:",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Shift Right Click to switch Spells",
+                                    "translate":"items.recondite.switch_spells",
+                                    "fallback" : " Shift Right Click to switch Spells",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Right Click to use Spell",
+                                    "translate": "items.recondite.use_spells",
+                                    "fallback" : " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
                                 },

@@ -15,7 +15,8 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "translate": "Legendary Ink",
+                                    "translate": "item.recondite.legendary_ink",
+                                    "fallback": "Legendary Ink",
                                     "italic": false
                                 }
                             ]
@@ -24,7 +25,8 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "Used to upgrade Spellbooks",
+                                    "translate": "items.recondite.ink_upgrade",
+                                    "fallback": "Used to upgrade Spellbooks",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 }

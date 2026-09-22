@@ -15,7 +15,8 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "translate": "Fire Elemental Spellbook (Tier 1)",
+                                    "translate": "item.recondite.fire_elemental_spellbook",
+                                    "fallback": "Fire Elemental Spellbook",
                                     "color": "#fcfc54",
                                     "italic": false
                                 }
@@ -25,37 +26,92 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "Spellbook imbued with flames of the Nether",
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.recondite.fire_elemental_spellbook.description.1",
+                                    "fallback" : "Spellbook imbued with Incendiary Flames",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
-                                {
-                                    "translate": " Fireball || Tier 1 (20s)",
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.fire_elemental_spellbook.fireball",
+                                    "fallback" : " Fireball || ",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Ignition || Tier 1 (25s)",
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Flame Volley || Tier 1 (8s)",
+                                    },
+                                    {
+                                    "translate": "(20s)",
                                     "color": "#00a800",
                                     "italic": false
-                                },
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
+                                    "fallback" : " Flame Volley || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(25s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate":"item.recondite.fire_elemental_spellbook.ignition",
+                                    "fallback" : " Ignition || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate":"items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(8s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
                                 {
-                                    "translate": "When in Main Hand:",
+                                    "translate":"items.recondite.main_hand",
+                                    "fallback" : "When in Main Hand:",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Shift Right Click to switch Spells",
+                                    "translate":"items.recondite.switch_spells",
+                                    "fallback" : " Shift Right Click to switch Spells",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Right Click to use Spell",
+                                    "translate": "items.recondite.use_spells",
+                                    "fallback" : " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
                                 },

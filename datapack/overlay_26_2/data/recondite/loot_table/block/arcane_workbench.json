@@ -11,7 +11,10 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_name": "Arcane Workbench",
+                                "minecraft:item_name": {
+                                    "translate" : "block.recondite.arcane_workbench",
+                                    "fallback": "Arcane Workbench"
+                                },
                                 "minecraft:item_model": "recondite:arcane_workbench",
                                 "minecraft:custom_data": {
                                     "recondite:item": "arcane_workbench"
