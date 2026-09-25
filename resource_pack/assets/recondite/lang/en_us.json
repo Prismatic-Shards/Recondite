@@ -3,7 +3,7 @@
   "item.recondite.common_ink": "Common Ink",
   "item.recondite.ender_elemental_spellbook": "Ender Elemental Spellbook",
   "item.recondite.ender_elemental_spellbook.description.1": "Spellbook imbued with arcanic runes",
-  "item.recondite.ender_elemental_spellbook.magic_missle": " Magic Missile || ",
+  "item.recondite.ender_elemental_spellbook.magic_missile": " Magic Missile || ",
   "item.recondite.ender_elemental_spellbook.microgravity": " Microgravity || ",
   "item.recondite.ender_elemental_spellbook.teleportation": " Teleportation || ",
   "item.recondite.epic_ink": "Epic Ink",
@@ -48,5 +48,5 @@
   "message.recondite.snowgrave_weak": "Too weak...",
   "message.recondite.spell_cooldown": "Spell under Cooldown",
   "message.recondite.spell_not_available": "Spell not available",
-  "message.recondite.spell_selection": "Spell is now"
+  "message.recondite.spell_selection": "|| Spell is now"
 }
