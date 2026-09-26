@@ -14,7 +14,7 @@ cp ../artifacts/${version}/Recondite-${version}.zip ../artifacts/${version}/mod.
 
 cd ../resource_pack
 zip -r ../artifacts/${version}/Recondite-${version}-RP.zip assets/ pack.mcmeta pack.png
-zip -r ../artifacts/${version}/mod.zip assets/ pack.png pack.mcmeta
+zip -r ../artifacts/${version}/mod.zip assets/
 cd ../mod
 zip -r ../artifacts/${version}/mod.zip *
 cd ../artifacts/${version}

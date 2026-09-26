@@ -4,7 +4,7 @@
   "predicate": {
     "minecraft:equipment": {
       "offhand": {
-        "items": "minecraft:jigsaw",
+        "items": "minecraft:vindicator_spawn_egg",
         "components": {
           "minecraft:custom_data": {
                   "recondite:item": "thorn_ring"
