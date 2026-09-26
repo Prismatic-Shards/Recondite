@@ -27,91 +27,91 @@
                             "lore": [
                                 {
                                     "translate": "items.recondite.tier_1",
-                                    "fallback" : "Tier 1",
+                                    "fallback": "Tier 1",
                                     "color": "#fcfc54",
                                     "italic": false
                                 },
                                 {
                                     "translate": "item.recondite.fire_elemental_spellbook.description.1",
-                                    "fallback" : "Spellbook imbued with Incendiary Flames",
+                                    "fallback": "Spellbook imbued with Incendiary Flames",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 [
                                     "",
                                     {
-                                    "translate": "item.recondite.fire_elemental_spellbook.fireball",
-                                    "fallback" : " Fireball || ",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "item.recondite.fire_elemental_spellbook.fireball",
+                                        "fallback": " Fireball || ",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate": "items.recondite.tier_1",
-                                    "fallback" : "Tier 1",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "items.recondite.tier_1",
+                                        "fallback": "Tier 1",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate": "(20s)",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "(20s)",
+                                        "color": "#00a800",
+                                        "italic": false
                                     }
                                 ],
                                 [
                                     "",
                                     {
-                                    "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
-                                    "fallback" : " Flame Volley || ",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
+                                        "fallback": " Flame Volley || ",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate": "items.recondite.tier_1",
-                                    "fallback" : "Tier 1",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "items.recondite.tier_1",
+                                        "fallback": "Tier 1",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate": "(25s)",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "(25s)",
+                                        "color": "#00a800",
+                                        "italic": false
                                     }
                                 ],
                                 [
                                     "",
                                     {
-                                    "translate":"item.recondite.fire_elemental_spellbook.ignition",
-                                    "fallback" : " Ignition || ",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "item.recondite.fire_elemental_spellbook.ignition",
+                                        "fallback": " Ignition || ",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate":"items.recondite.tier_1",
-                                    "fallback" : "Tier 1",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "items.recondite.tier_1",
+                                        "fallback": "Tier 1",
+                                        "color": "#00a800",
+                                        "italic": false
                                     },
                                     {
-                                    "translate": "(8s)",
-                                    "color": "#00a800",
-                                    "italic": false
+                                        "translate": "(8s)",
+                                        "color": "#00a800",
+                                        "italic": false
                                     }
                                 ],
                                 {
-                                    "translate":"items.recondite.main_hand",
-                                    "fallback" : "When in Main Hand:",
+                                    "translate": "items.recondite.main_hand",
+                                    "fallback": "When in Main Hand:",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 },
                                 {
-                                    "translate":"items.recondite.switch_spells",
-                                    "fallback" : " Shift Right Click to switch Spells",
+                                    "translate": "items.recondite.switch_spells",
+                                    "fallback": " Shift Right Click to switch Spells",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 {
                                     "translate": "items.recondite.use_spells",
-                                    "fallback" : " Right Click to use Spell",
+                                    "fallback": " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
