@@ -25,6 +25,12 @@
               "type": "minecraft:set_lore",
               "lore": [
                 {
+                  "translate": "items.recondite.tier_1",
+                  "fallback": "Tier 1",
+                  "color": "#fcfc54",
+                  "italic": false
+                },
+                {
                   "translate": "item.recondite.lightning_elemental_spellbook.description.1",
                   "fallback": "Spellbook imbued with Rumbling Lightning",
                   "color": "#5454fc",

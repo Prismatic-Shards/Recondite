@@ -15,7 +15,8 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "translate": "Lightning Elemental Spellbook (Tier 2)",
+                                    "translate": "item.recondite.lightning_elemental_spellbook",
+                                    "fallback": "Lightning Elemental Spellbook",
                                     "color": "#fcfc54",
                                     "italic": false
                                 }
@@ -25,42 +26,112 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "Spellbook imbued with Rumbling Lightning",
+                                    "translate": "items.recondite.tier_2",
+                                    "fallback" : "Tier 2",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.recondite.lightning_elemental_spellbook.description.1",
+                                    "fallback" : "Spellbook imbued with Rumbling Lightning",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
-                                {
-                                    "translate": " Lightning Strike || Tier 2 (10s)",
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.lightning_elemental_spellbook.lightning_strike",
+                                    "fallback" : " Lightning Strike || ",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Discharge || Tier 2 (20s)",
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_2",
+                                    "fallback" : "Tier 2",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Electrostatic Charge || Tier 2 (10s)",
+                                    },
+                                    {
+                                    "translate": "(10s)",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Static Footing || Tier 1 (80s)",
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.lightning_elemental_spellbook.discharge",
+                                    "fallback" : " Discharge || ",
                                     "color": "#00a800",
                                     "italic": false
-                                },
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_2",
+                                    "fallback" : "Tier 2",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(20s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate":"item.recondite.lightning_elemental_spellbook.electrostatic_charge",
+                                    "fallback" : " Electrostatic Charge || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate":"items.recondite.tier_2",
+                                    "fallback" : "Tier 2",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(10s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate":"item.recondite.lightning_elemental_spellbook.static_footing",
+                                    "fallback" : " Static Footing || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate":"items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(80s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
                                 {
-                                    "translate": "When in Main Hand:",
+                                    "translate":"items.recondite.main_hand",
+                                    "fallback" : "When in Main Hand:",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Shift Right Click to switch Spells",
+                                    "translate":"items.recondite.switch_spells",
+                                    "fallback" : " Shift Right Click to switch Spells",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Right Click to use Spell",
+                                    "translate": "items.recondite.use_spells",
+                                    "fallback" : " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
                                 },

@@ -15,7 +15,8 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "translate": "Ender Elemental Spellbook (Tier 1)",
+                                    "translate": "item.recondite.ender_elemental_spellbook",
+                                    "fallback": "Ender Elemental Spellbook",
                                     "color": "#fcfc54",
                                     "italic": false
                                 }
@@ -25,37 +26,92 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "Spellbook imbued with arcanic runes",
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.recondite.ender_elemental_spellbook.description.1",
+                                    "fallback" : "Spellbook imbued with arcanic runes",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
-                                {
-                                    "translate": " Magic Missile || Tier 1 (8s)",
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.ender_elemental_spellbook.magic_missile",
+                                    "fallback" : " Magic Missile || ",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Teleportation || Tier 1 (20s)",
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
                                     "color": "#00a800",
                                     "italic": false
-                                },
-                                {
-                                    "translate": " Microgravity || Tier 1 (30s)",
+                                    },
+                                    {
+                                    "translate": "(8s)",
                                     "color": "#00a800",
                                     "italic": false
-                                },
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate": "item.recondite.ender_elemental_spellbook.teleportation",
+                                    "fallback" : " Teleportation || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(20s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                    "translate":"item.recondite.ender_elemental_spellbook.microgravity",
+                                    "fallback" : " Microgravity || ",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate":"items.recondite.tier_1",
+                                    "fallback" : "Tier 1",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    },
+                                    {
+                                    "translate": "(30s)",
+                                    "color": "#00a800",
+                                    "italic": false
+                                    }
+                                ],
                                 {
-                                    "translate": "When in Main Hand:",
+                                    "translate":"items.recondite.main_hand",
+                                    "fallback" : "When in Main Hand:",
                                     "color": "#a8a8a8",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Shift Right Click to switch Spells",
+                                    "translate":"items.recondite.switch_spells",
+                                    "fallback" : " Shift Right Click to switch Spells",
                                     "color": "#5454fc",
                                     "italic": false
                                 },
                                 {
-                                    "translate": " Right Click to use Spell",
+                                    "translate": "items.recondite.use_spells",
+                                    "fallback" : " Right Click to use Spell",
                                     "color": "#5454fc",
                                     "italic": false
                                 },

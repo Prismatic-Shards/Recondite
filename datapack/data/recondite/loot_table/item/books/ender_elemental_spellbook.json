@@ -25,6 +25,12 @@
               "type": "minecraft:set_lore",
               "lore": [
                 {
+                  "translate": "items.recondite.tier_1",
+                  "fallback": "Tier 1",
+                  "color": "#fcfc54",
+                  "italic": false
+                },
+                {
                   "translate": "item.recondite.ender_elemental_spellbook.description.1",
                   "fallback": "Spellbook imbued with arcanic runes",
                   "color": "#5454fc",
@@ -33,8 +39,8 @@
                 [
                   "",
                   {
-                    "translate": "item.recondite.ender_elemental_spellbook.magic_missle",
-                    "fallback": "Magic Missile",
+                    "translate": "item.recondite.ender_elemental_spellbook.magic_missile",
+                    "fallback": " Magic Missile || ",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -55,7 +61,7 @@
                   "",
                   {
                     "translate": "item.recondite.ender_elemental_spellbook.teleportation",
-                    "fallback": "Magic Missile",
+                    "fallback": " Teleportation || ",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -76,7 +82,7 @@
                   "",
                   {
                     "translate": "item.recondite.ender_elemental_spellbook.mircrogravity",
-                    "fallback": "Microgravity",
+                    "fallback": " Microgravity || ",
                     "color": "#00a800",
                     "italic": false
                   },
