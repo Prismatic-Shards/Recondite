@@ -6,15 +6,15 @@
     "version": "0.1.0",
     "metadata": {
       "name": "Recondite",
-      "description": "",
+      "description": "Adds elemental spellbooks that are able to found and crafted in new structures.",
       "contributors": {
         "Alligator": "Developer",
         "BananaKingXO": "Developer"
       },
       "contact": {
-        "homepage": "",
-        "sources": "",
-        "issues": ""
+        "homepage": "https://modrinth.com/datapack/recondite",
+        "sources": "https://github.com/Prismatic-Shards/recondite",
+        "issues": "http://discord.prismaticshards.xyz"
       },
       "icon": "pack.png"
     },

@@ -7,31 +7,31 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jigsaw",
+          "name": "minecraft:vindicator_spawn_egg",
           "weight": 1,
           "conditions": [],
           "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "translate": "Common Ink",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "translate": "Used to upgrade Spellbooks",
-                                    "color": "#a8a8a8",
-                                    "italic": false
-                                }
-                            ],
-                            "entity": "this",
-                            "mode": "replace_all" 
-                        },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Common Ink",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Used to upgrade Spellbooks",
+                  "color": "#a8a8a8",
+                  "italic": false
+                }
+              ],
+              "entity": "this",
+              "mode": "replace_all"
+            },
             {
               "function": "minecraft:set_components",
               "components": {
@@ -39,12 +39,13 @@
                 "minecraft:custom_data": {
                   "recondite:item": "common_ink"
                 },
-                "rarity":"common"
+                "rarity": "common",
+                "!minecraft:entity_data": {}
               }
-            }
-        ]
-              }
-            ]
             }
           ]
         }
+      ]
+    }
+  ]
+}

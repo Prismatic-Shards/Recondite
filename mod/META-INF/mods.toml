@@ -2,17 +2,18 @@ modLoader = "lowcodefml"
 loaderVersion = "[1,]"
 license = "LicenseRef-Custom"
 showAsResourcePack = false
-issueTrackerURL = ""
+issueTrackerURL = "http://discord.prismaticshards.xyz"
 
 [[mods]]
 modId = "recondite"
 version = "0.1.0"
 displayName = "Recondite"
-displayURL = ""
-description = ''' '''
+displayURL = "https://modrinth.com/datapack/recondite"
+description = '''Adds elemental spellbooks that 
+are able to found and crafted in new structures.'''
 logoFile = "pack.png"
 logoBlur = false
-updateJSONURL = ""
+updateJSONURL = "https://api.modrinth.com/updates/reeR1x6Y/forge_updates.json"
 credits = "BananaKingXO"
 authors = "Alligator"
 

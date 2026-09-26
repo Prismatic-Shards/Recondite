@@ -7,54 +7,53 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jigsaw",
+          "name": "minecraft:vindicator_spawn_egg",
           "weight": 1,
           "conditions": [],
           "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "translate": "Thorn Ring",
-                                    "color": "#fcfc54",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                  "translate": "A Commemorative Ring",
-                                  "color": "#5454fc",
-                                  "italic": false
-                                },
-                                "",
-                                {
-                                "translate": "When in Offhand:",
-                                "color": "#a8a8a8",
-                                "italic": false
-                              },
-                              {
-                                "translate": " 30% Damage increase for Ice Spells",
-                                "color": "#5454fc",
-                                "italic": false
-                              },
-                              {
-                                "translate": " New Spell Unlocked",
-                                "color": "#5454fc",
-                                "italic": false
-                              },
-                              {
-                                "translate": " Inflicts damage when casting spells",
-                                "color": "#ff5555",
-                                "italic": false
-                              }
-                
-                            ],
-                            "entity": "this",
-                            "mode": "replace_all" 
-                        },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Thorn Ring",
+                  "color": "#fcfc54",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "A Commemorative Ring",
+                  "color": "#5454fc",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "When in Offhand:",
+                  "color": "#a8a8a8",
+                  "italic": false
+                },
+                {
+                  "translate": " 30% Damage increase for Ice Spells",
+                  "color": "#5454fc",
+                  "italic": false
+                },
+                {
+                  "translate": " New Spell Unlocked",
+                  "color": "#5454fc",
+                  "italic": false
+                },
+                {
+                  "translate": " Inflicts damage when casting spells",
+                  "color": "#ff5555",
+                  "italic": false
+                }
+              ],
+              "entity": "this",
+              "mode": "replace_all"
+            },
             {
               "function": "minecraft:set_components",
               "components": {
@@ -62,12 +61,13 @@
                 "minecraft:custom_data": {
                   "recondite:item": "thorn_ring"
                 },
-                "max_stack_size": 1
+                "max_stack_size": 1,
+                "!minecraft:entity_data": {}
               }
-            }
-        ]
-              }
-            ]
             }
           ]
         }
+      ]
+    }
+  ]
+}

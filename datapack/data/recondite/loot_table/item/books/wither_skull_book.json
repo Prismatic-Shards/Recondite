@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jigsaw",
+          "name": "minecraft:vindicator_spawn_egg",
           "weight": 1,
           "modifier": [
             {
@@ -53,7 +53,8 @@
                   "animation": "none",
                   "consume_seconds": 100,
                   "has_consume_particles": false
-                }
+                },
+                "!minecraft:entity_data": {}
               }
             }
           ]

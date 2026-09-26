@@ -7,42 +7,42 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jigsaw",
+          "name": "minecraft:vindicator_spawn_egg",
           "weight": 1,
           "conditions": [],
           "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                {
-                                    "translate": "Wither Skull Spellbook",
-                                    "color": "#fcfc54",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "translate": "Spellbook with the ability to shoot Wither Skull",
-                                    "color": "#5454fc",
-                                    "italic": false
-                                },
-                                {
-                                    "translate": " 5 Damage",
-                                    "color": "#00a800",
-                                    "italic": false
-                                },
-                                {
-                                    "translate": " 1s Cooldown",
-                                    "color": "#5454fc",
-                                    "italic": false
-                                }
-                            ],
-                            "entity": "this",
-                            "mode": "replace_all" 
-                        },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Wither Skull Spellbook",
+                  "color": "#fcfc54",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Spellbook with the ability to shoot Wither Skull",
+                  "color": "#5454fc",
+                  "italic": false
+                },
+                {
+                  "translate": " 5 Damage",
+                  "color": "#00a800",
+                  "italic": false
+                },
+                {
+                  "translate": " 1s Cooldown",
+                  "color": "#5454fc",
+                  "italic": false
+                }
+              ],
+              "entity": "this",
+              "mode": "replace_all"
+            },
             {
               "function": "minecraft:set_components",
               "components": {
@@ -54,12 +54,13 @@
                   "animation": "none",
                   "consume_seconds": 100,
                   "has_consume_particles": false
-                }
+                },
+                "!minecraft:entity_data": {}
               }
-            }
-        ]
-              }
-            ]
             }
           ]
         }
+      ]
+    }
+  ]
+}

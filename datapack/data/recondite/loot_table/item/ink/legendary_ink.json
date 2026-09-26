@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jigsaw",
+          "name": "minecraft:vindicator_spawn_egg",
           "weight": 1,
           "modifier": [
             {
@@ -40,7 +40,8 @@
                 "minecraft:custom_data": {
                   "recondite:item": "legendary_ink"
                 },
-                "rarity": "rare"
+                "rarity": "rare",
+                "!minecraft:entity_data": {}
               }
             }
           ]
