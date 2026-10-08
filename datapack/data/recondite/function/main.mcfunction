@@ -1,4 +1,5 @@
 scoreboard players add @a recondite.fireball.cooldown 1
+scoreboard players add @a recondite.firebolt.cooldown 1
 scoreboard players add @a recondite.flame_volley.cooldown 1
 scoreboard players add @a recondite.ignition.cooldown 1
 scoreboard players add @a recondite.wither.cooldown 1
@@ -27,8 +28,10 @@ scoreboard players add @a recondite.snowgrave.cooldown 1
 
 execute at @a[tag=recondite.frostbite.user] run particle minecraft:snowflake ~ ~0.5 ~ 0.2 0.2 0.2 0.01 5
 
+scoreboard players add @e[type=item_display,name=firebolt.display] recondite.firebolt.projectile 1
 scoreboard players add @e[type=item_display,name=magic.missile.display] recondite.magic.missile.projectile 1
 scoreboard players add @e[type=item_display,name=icicle.display] recondite.icicle.projectile 1
+scoreboard players add @a[tag=recondite.firebolt.user] recondite.firebolt.user 1
 scoreboard players add @a[tag=recondite.magic.missile.user] recondite.magic.missile.user 1
 scoreboard players add @a[tag=recondite.icicle.user] recondite.icicle.user 1
 
@@ -113,3 +116,11 @@ execute as @e[tag=recondite.icicle.user,scores={recondite.icicle.user=20..}] run
 execute as @e[type=item_display,name=icicle.display] at @s run tp @s ^ ^ ^0.75
 execute as @e[tag=recondite.freezing.victim] run scoreboard players add @s recondite.freezing.victim 1
 execute as @e[tag=recondite.freezing.victim] run function recondite:item/ice_elemental_spellbook/freezing
+
+execute at @e[type=item_display,name=firebolt.display] anchored eyes run particle minecraft:flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute at @e[type=item_display,name=firebolt.display] anchored eyes run particle minecraft:small_flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute as @e[type=item_display,name=firebolt.display] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.firebolt.user] run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
+execute as @e[type=item_display,name=firebolt.display] at @s run execute unless block ~ ~ ~ air run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
+execute as @e[type=item_display,name=firebolt.display,scores={recondite.firebolt.projectile=40..}] at @s run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
+execute as @e[tag=recondite.firebolt.user,scores={recondite.firebolt.user=20..}] run function recondite:item/fire_elemental_spellbook/abilities/firebolt/tag_remove
+execute as @e[type=item_display,name=firebolt.display] at @s run tp @s ^ ^ ^1

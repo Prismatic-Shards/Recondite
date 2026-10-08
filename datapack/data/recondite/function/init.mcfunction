@@ -3,6 +3,9 @@ scoreboard objectives add MotionY dummy
 scoreboard objectives add MotionZ dummy
 
 scoreboard objectives add recondite.fireball.cooldown dummy
+scoreboard objectives add recondite.firebolt.cooldown dummy
+scoreboard objectives add recondite.firebolt.user dummy
+scoreboard objectives add recondite.firebolt.projectile dummy
 scoreboard objectives add recondite.fire_switch.cooldown dummy
 scoreboard objectives add recondite.ice_switch.cooldown dummy
 scoreboard objectives add recondite.ender_switch.cooldown dummy

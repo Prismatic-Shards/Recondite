@@ -39,8 +39,8 @@
                 [
                   "",
                   {
-                    "translate": "item.recondite.fire_elemental_spellbook.fireball",
-                    "fallback": "Fireball",
+                    "translate": "item.recondite.fire_elemental_spellbook.firebolt",
+                    "fallback": "Firebolt",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -52,7 +52,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (20s)",
+                    "text": " (8s)",
                     "color": "#00a800",
                     "italic": false
                   }
