@@ -23,5 +23,4 @@ execute if score @s recondite.snowgrave.victim matches 200 run damage @s 1 magic
 
 execute if score @s recondite.snowgrave.victim matches 200.. run kill @n[type=marker,tag=recondite.snowgrave.marker.1]
 execute if score @s recondite.snowgrave.victim matches 200.. run kill @n[type=marker,tag=recondite.snowgrave.marker.2]
-execute if score @s recondite.snowgrave.victim matches 200.. run attribute @s movement_speed base reset
-execute if score @s recondite.snowgrave.victim matches 200.. run tag @s remove recondite.snowgrave.victim
+execute if score @s recondite.snowgrave.victim matches 200.. run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/victim_remove_values

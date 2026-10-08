@@ -11,5 +11,4 @@ execute if score @s recondite.snowgrave.user matches 180 run damage @s 1 magic
 
 execute if score @s recondite.snowgrave.user matches 0..7 run attribute @s gravity base set -0.012
 execute if score @s recondite.snowgrave.user matches 8 run attribute @s gravity base set 0
-execute if score @s recondite.snowgrave.user matches 200.. run attribute @s gravity base reset 
-execute if score @s recondite.snowgrave.user matches 200.. run tag @s remove recondite.snowgrave.user 
+execute if score @s recondite.snowgrave.user matches 200.. run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/user_reset

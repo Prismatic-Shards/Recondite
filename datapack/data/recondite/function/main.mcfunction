@@ -36,8 +36,6 @@ execute as @a[tag=recondite.snowgrave.user] run scoreboard players add @s recond
 execute as @e[tag=recondite.snowgrave.victim] run scoreboard players add @s recondite.snowgrave.victim 1
 execute as @e[tag=recondite.snowgrave.victim] run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/victim_check
 execute as @a[tag=recondite.snowgrave.user] run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/user_check
-execute as @a[tag=!recondite.snowgrave.user] run scoreboard players reset @s recondite.snowgrave.user
-execute as @e[tag=!recondite.snowgrave.victim] run scoreboard players reset @s recondite.snowgrave.victim
 
 execute as @a[tag=recondite.snowgrave.user] at @s run function recondite:item/ice_elemental_spellbook/abilities/snowgrave/sound
 execute as @a if predicate recondite:thorn_ring_offhand run tag @s add recondite.thorn.equip
@@ -115,5 +113,3 @@ execute as @e[tag=recondite.icicle.user,scores={recondite.icicle.user=20..}] run
 execute as @e[type=item_display,name=icicle.display] at @s run tp @s ^ ^ ^0.75
 execute as @e[tag=recondite.freezing.victim] run scoreboard players add @s recondite.freezing.victim 1
 execute as @e[tag=recondite.freezing.victim] run function recondite:item/ice_elemental_spellbook/freezing
-
-execute as @e[tag=!recondite.freezing.victim] run scoreboard players reset @s recondite.freezing.victim
