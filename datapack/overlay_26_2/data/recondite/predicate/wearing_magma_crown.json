@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:equipment": {
+      "head": {
+        "items": "minecraft:netherite_helmet",
+        "components": {
+          "minecraft:custom_data": {
+            "recondite:item": "magma_crown"
+          }
+        }
+      }
+    }
+  }
+}

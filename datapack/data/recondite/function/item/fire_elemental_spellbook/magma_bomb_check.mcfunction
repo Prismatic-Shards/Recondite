@@ -1,0 +1,3 @@
+execute if entity @s[name="magma_bomb.display"] run function recondite:item/fire_elemental_spellbook/abilities_tier3/magma_bomb/kill
+execute if entity @s[name="magma_bomb.display.tier2"] run function recondite:item/fire_elemental_spellbook/abilities_tier4/magma_bomb/kill
+execute if entity @s[name="magma_bomb.display.tier3"] run function recondite:item/fire_elemental_spellbook/abilities_tier5/magma_bomb/kill

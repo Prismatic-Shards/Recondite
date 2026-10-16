@@ -1,0 +1,12 @@
+scoreboard players add @s recondite.flame_volley.user 1
+execute as @s[scores={recondite.flame_volley.user=3}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=6}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=9}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=12}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=15}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=18}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=21}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=24}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=27}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=30}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/flame_volley
+execute as @s[scores={recondite.flame_volley.user=30}] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/end

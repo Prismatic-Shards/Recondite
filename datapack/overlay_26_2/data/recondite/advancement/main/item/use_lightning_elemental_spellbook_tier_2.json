@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "recondite:item/lightning_elemental_spellbook/ablities_tier2/use"
+    "function": "recondite:item/lightning_elemental_spellbook/abilities_tier2/use"
   }
 }

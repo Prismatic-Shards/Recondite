@@ -1,4 +1,5 @@
 scoreboard players add @a recondite.fireball.cooldown 1
+scoreboard players add @a recondite.magma_bomb.cooldown 1
 scoreboard players add @a recondite.firebolt.cooldown 1
 scoreboard players add @a recondite.flame_volley.cooldown 1
 scoreboard players add @a recondite.ignition.cooldown 1
@@ -28,10 +29,12 @@ scoreboard players add @a recondite.snowgrave.cooldown 1
 
 execute at @a[tag=recondite.frostbite.user] run particle minecraft:snowflake ~ ~0.5 ~ 0.2 0.2 0.2 0.01 5
 
-scoreboard players add @e[type=item_display,name=firebolt.display] recondite.firebolt.projectile 1
+scoreboard players add @e[type=item_display,tag=recondite.firebolt.entity] recondite.firebolt.projectile 1
+scoreboard players add @e[type=item_display,name=magma_bomb.display] recondite.magma_bomb.projectile 1
 scoreboard players add @e[type=item_display,name=magic.missile.display] recondite.magic.missile.projectile 1
 scoreboard players add @e[type=item_display,name=icicle.display] recondite.icicle.projectile 1
 scoreboard players add @a[tag=recondite.firebolt.user] recondite.firebolt.user 1
+scoreboard players add @a[tag=recondite.magma_bomb.user] recondite.magma_bomb.user 1
 scoreboard players add @a[tag=recondite.magic.missile.user] recondite.magic.missile.user 1
 scoreboard players add @a[tag=recondite.icicle.user] recondite.icicle.user 1
 
@@ -70,13 +73,16 @@ execute at @e[type=marker,tag=recondite.snowgrave.marker.2] rotated ~240 ~ run p
 execute at @e[tag=recondite.snowgrave.victim] run tp @e[tag=recondite.snowgrave.marker.2] ~ ~ ~
 
 execute as @a[tag=recondite.flame_volley.user] run function recondite:item/fire_elemental_spellbook/abilities/flame_volley/score
-execute as @a[tag=recondite.flame_volley.user2] run function recondite:item/fire_elemental_spellbook/abilities/tier_2/flame_volley/score
+execute as @a[tag=recondite.flame_volley.user2] run function recondite:item/fire_elemental_spellbook/abilities_tier2/flame_volley/score
+execute as @a[tag=recondite.flame_volley.user3] run function recondite:item/fire_elemental_spellbook/abilities_tier3/flame_volley/score
+execute as @a[tag=recondite.flame_volley.user4] run function recondite:item/fire_elemental_spellbook/abilities_tier4/flame_volley/score
+execute as @a[tag=recondite.flame_volley.user5] run function recondite:item/fire_elemental_spellbook/abilities_tier5/flame_volley/score
 execute as @a[tag=recondite.discharge.user] run function recondite:item/lightning_elemental_spellbook/abilities/discharge/score
 execute as @a[tag=recondite.electrostatic_charge.user] run function recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/score
-execute as @a[tag=recondite.electrostatic_charge.tier2.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/electrostatic_charge/score
-execute as @a[tag=recondite.discharge.tier2.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/discharge/score
+execute as @a[tag=recondite.electrostatic_charge.tier2.user] run function recondite:item/lightning_elemental_spellbook/abilities_tier2/electrostatic_charge/score
+execute as @a[tag=recondite.discharge.tier2.user] run function recondite:item/lightning_elemental_spellbook/abilities_tier2/discharge/score
 execute as @a[tag=recondite.ignition.user] run function recondite:item/fire_elemental_spellbook/abilities/ignition/score
-execute as @a[tag=recondite.static.user] run function recondite:item/lightning_elemental_spellbook/ablities_tier2/static/score
+execute as @a[tag=recondite.static.user] run function recondite:item/lightning_elemental_spellbook/abilities_tier2/static/score
 execute as @a[tag=recondite.shock.victim] run function recondite:item/lightning_elemental_spellbook/abilities/electric_shock/victim
 execute as @a[scores={recondite.lightning_spell.value=0}] run scoreboard players add @s recondite.lightning_spell.value 1
 execute as @a[scores={recondite.fire_spell.value=0}] run scoreboard players add @s recondite.fire_spell.value 1
@@ -90,7 +96,7 @@ scoreboard players add @a recondite.misc 1
 execute as @a[tag=recondite.microgravity.user] anchored feet at @s run particle minecraft:dragon_breath ~ ~ ~ 0.1 0 0.1 0.03125 5 force
 
 execute as @a[tag=recondite.electrostatic_charge.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/abilities/electrostatic_charge/end
-execute as @a[tag=recondite.electrostatic_charge.tier2.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/ablities_tier2/electrostatic_charge/end
+execute as @a[tag=recondite.electrostatic_charge.tier2.user,nbt={HurtTime:9s}] at @s run function recondite:item/lightning_elemental_spellbook/abilities_tier2/electrostatic_charge/end
 
 execute as @a[scores={recondite.misc=3..}] run scoreboard players reset @a recondite.misc
 
@@ -117,10 +123,20 @@ execute as @e[type=item_display,name=icicle.display] at @s run tp @s ^ ^ ^0.75
 execute as @e[tag=recondite.freezing.victim] run scoreboard players add @s recondite.freezing.victim 1
 execute as @e[tag=recondite.freezing.victim] run function recondite:item/ice_elemental_spellbook/freezing
 
-execute at @e[type=item_display,name=firebolt.display] anchored eyes run particle minecraft:flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
-execute at @e[type=item_display,name=firebolt.display] anchored eyes run particle minecraft:small_flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
-execute as @e[type=item_display,name=firebolt.display] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.firebolt.user] run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
-execute as @e[type=item_display,name=firebolt.display] at @s run execute unless block ~ ~ ~ air run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
-execute as @e[type=item_display,name=firebolt.display,scores={recondite.firebolt.projectile=40..}] at @s run function recondite:item/fire_elemental_spellbook/abilities/firebolt/kill
+execute at @e[type=item_display,tag=recondite.firebolt.entity] anchored eyes run particle minecraft:flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute at @e[type=item_display,tag=recondite.firebolt.entity] anchored eyes run particle minecraft:small_flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute as @e[type=item_display,tag=recondite.firebolt.entity] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.firebolt.user] run function recondite:item/fire_elemental_spellbook/firebolt_check
+execute as @e[type=item_display,tag=recondite.firebolt.entity] at @s run execute unless block ~ ~ ~ air run function recondite:item/fire_elemental_spellbook/firebolt_check
+execute as @e[type=item_display,tag=recondite.firebolt.entity,scores={recondite.firebolt.projectile=40..}] at @s run function recondite:item/fire_elemental_spellbook/firebolt_check
 execute as @e[tag=recondite.firebolt.user,scores={recondite.firebolt.user=20..}] run function recondite:item/fire_elemental_spellbook/abilities/firebolt/tag_remove
-execute as @e[type=item_display,name=firebolt.display] at @s run tp @s ^ ^ ^1
+execute as @e[type=item_display,tag=recondite.firebolt.entity] at @s run tp @s ^ ^ ^1
+
+
+execute at @e[type=item_display,tag=recondite.magma_bomb.entity] anchored eyes run particle minecraft:flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute at @e[type=item_display,tag=recondite.magma_bomb.entity] anchored eyes run particle minecraft:small_flame ^ ^ ^-0.2 0.125 0.125 0.125 0.01 2 force
+execute as @e[type=item_display,tag=recondite.magma_bomb.entity] at @s run execute if entity @e[distance=..1.8,type=!marker,type=!item,type=!item_display,tag=!recondite.magma_bomb.user] run function recondite:item/fire_elemental_spellbook/magma_bomb_check
+execute as @e[type=item_display,tag=recondite.magma_bomb.entity] at @s run execute unless block ~ ~ ~ air run function recondite:item/fire_elemental_spellbook/magma_bomb_check
+execute as @e[type=item_display,tag=recondite.magma_bomb.entity] at @s run rotate @s ~ ~3
+execute as @e[tag=recondite.magma_bomb.user,scores={recondite.magma_bomb.user=20..}] run function recondite:item/fire_elemental_spellbook/abilities_tier3/magma_bomb/tag_remove
+execute as @e[type=item_display,tag=recondite.magma_bomb.entity] at @s unless entity @s[x_rotation=90] run tp @s ^ ^ ^0.75
+execute as @e[type=item_display,tag=recondite.magma_bomb.entity] at @s if entity @s[x_rotation=90] run tp @s ^ ^ ^1

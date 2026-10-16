@@ -1,0 +1,189 @@
+{
+    "type": "minecraft:empty",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:jigsaw",
+                    "weight": 1,
+                    "conditions": [],
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                {
+                                    "translate": "item.recondite.fire_elemental_spellbook",
+                                    "fallback": "Fire Elemental Spellbook",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "items.recondite.tier_4",
+                                    "fallback": "Tier 4",
+                                    "color": "#fcfc54",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.recondite.fire_elemental_spellbook.description.1",
+                                    "fallback": "Spellbook imbued with Incendiary Flames",
+                                    "color": "#5454fc",
+                                    "italic": false
+                                },
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.firebolt",
+                                        "fallback": " Firebolt || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_4",
+                                        "fallback": "Tier 4",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(8s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
+                                        "fallback": " Flame Volley || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_4",
+                                        "fallback": "Tier 4",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(25s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.ignition",
+                                        "fallback": " Ignition || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_4",
+                                        "fallback": "Tier 4",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(8s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.fireball",
+                                        "fallback": " Fireball || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_3",
+                                        "fallback": "Tier 3",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(8s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.magma_bomb",
+                                        "fallback": " Magma Bomb || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_2",
+                                        "fallback": "Tier 2",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(8s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "translate": "items.recondite.main_hand",
+                                    "fallback": "When in Main Hand:",
+                                    "color": "#a8a8a8",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "items.recondite.switch_spells",
+                                    "fallback": " Shift Right Click to switch Spells",
+                                    "color": "#5454fc",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "items.recondite.use_spells",
+                                    "fallback": " Right Click to use Spell",
+                                    "color": "#5454fc",
+                                    "italic": false
+                                },
+                                "",
+                                {
+                                    "translate": "Recondite",
+                                    "color": "#d8e4ec",
+                                    "font": "recondite:tooltip",
+                                    "italic": false
+                                }
+                            ],
+                            "entity": "this",
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "recondite:fireball_spellbook",
+                                "minecraft:custom_data": {
+                                    "recondite:item": "fire_elemental_spellbook_tier4"
+                                },
+                                "consumable": {
+                                    "animation": "none",
+                                    "consume_seconds": 100,
+                                    "has_consume_particles": false
+                                },
+                                "max_stack_size": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

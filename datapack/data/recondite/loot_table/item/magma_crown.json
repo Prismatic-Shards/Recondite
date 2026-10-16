@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "item.recondite.magma_crown",
+                  "fallback": "Magma Crown",
+                  "color": "#fcfc54",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "recondite:thorn_ring",
+                "minecraft:custom_data": {
+                  "recondite:item": "thorn_ring"
+                },
+                "minecraft:equippable": {
+                  "slot": "head",
+                  "damage_on_hurt": true,
+                  "equip_sound": "minecraft:item.armor.equip_generic"
+                },
+                "minecraft:max_damage": 502,
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.recondite.magma_crown",
+                  "fallback": "Magma Crown",
+                  "color": "#54fcfc",
+                  "italic": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Recondite",
+        "description": "A world filled with new magic",
+        "hidden": false,
+        "icon": {
+      "id": "minecraft:jigsaw",
+      "components": {
+        "item_model": "recondite:common_ink"
+      }
+    },
+    "background": "minecraft:block/mossy_stone_bricks"
+    },
+  "criteria": {
+    "auto": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

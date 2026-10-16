@@ -5,6 +5,26 @@ if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.b
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.book,scores={recondite.arcane_workbench.count=1}] \
 run function recondite:block/arcane_workbench/crafting/craft/special/craft_fire_book
 
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.uncommon_ink,scores={recondite.arcane_workbench.count=2}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.fire_elemental_spellbook,scores={recondite.arcane_workbench.count=1}] \
+run function recondite:block/arcane_workbench/crafting/craft/special/upgrade/upgrade_fire_book
+
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.rare_ink,scores={recondite.arcane_workbench.count=2}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.fire_elemental_spellbook_tier2,scores={recondite.arcane_workbench.count=1}] \
+run function recondite:block/arcane_workbench/crafting/craft/special/upgrade/upgrade_fire_book
+
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.epic_ink,scores={recondite.arcane_workbench.count=2}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.fire_elemental_spellbook_tier3,scores={recondite.arcane_workbench.count=1}] \
+run function recondite:block/arcane_workbench/crafting/craft/special/upgrade/upgrade_fire_book
+
+execute if score @s recondite.misc matches 2 \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.legendary_ink,scores={recondite.arcane_workbench.count=2}] \
+if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.fire_elemental_spellbook_tier4,scores={recondite.arcane_workbench.count=1}] \
+run function recondite:block/arcane_workbench/crafting/craft/special/upgrade/upgrade_fire_book
+
 execute if score @s recondite.misc matches 4 \
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.recondite.common_ink,scores={recondite.arcane_workbench.count=2}] \
 if entity @e[type=item,distance=..1.5,tag=recondite.arcane_workbench.minecraft.lightning_rod,scores={recondite.arcane_workbench.count=1}] \

@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "recondite:item/magma_crown"
+        },
+        "when": ["head"]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "recondite:item/magma_crown_inv"
+    },
+    "property": "minecraft:display_context"
+  }
+}

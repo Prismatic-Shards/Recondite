@@ -1,0 +1,37 @@
+{
+  "parent": "recondite:event/recondite",
+  "display": {
+    "icon": {
+      "id": "minecraft:jigsaw",
+      "components": {
+        "item_model": "recondite:fireball_spellbook"
+      }
+    },
+    "title": "Fire Mage",
+    "description": "Acquire or Craft a Tier 5 Fire Elemental Spellbook",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement_name": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:jigsaw",
+            "components": {
+              "minecraft:custom_data": {
+                    "recondite:item": "fire_elemental_spellbook_tier5"
+                  }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["requirement_name"]
+  ]
+}
