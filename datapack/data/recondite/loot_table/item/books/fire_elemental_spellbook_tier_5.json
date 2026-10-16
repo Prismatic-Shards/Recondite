@@ -40,7 +40,7 @@
                   "",
                   {
                     "translate": "item.recondite.fire_elemental_spellbook.firebolt",
-                    "fallback": "Firebolt",
+                    "fallback": "Firebolt ||",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -52,7 +52,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (8s)",
+                    "text": " (4s)",
                     "color": "#00a800",
                     "italic": false
                   }
@@ -61,7 +61,7 @@
                   "",
                   {
                     "translate": "item.recondite.fire_elemental_spellbook.ignition",
-                    "fallback": "Ignition",
+                    "fallback": "Ignition ||",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -73,7 +73,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (25s)",
+                    "text": " (15s)",
                     "color": "#00a800",
                     "italic": false
                   }
@@ -82,7 +82,7 @@
                   "",
                   {
                     "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
-                    "fallback": "Fireball",
+                    "fallback": "Flame Volley ||",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -94,7 +94,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (8s)",
+                    "text": " (4s)",
                     "color": "#00a800",
                     "italic": false
                   }
@@ -103,7 +103,7 @@
                   "",
                   {
                     "translate": "item.recondite.fire_elemental_spellbook.fireball",
-                    "fallback": "Fireball",
+                    "fallback": "Fireball ||",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -115,7 +115,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (8s)",
+                    "text": " (10s)",
                     "color": "#00a800",
                     "italic": false
                   }
@@ -124,7 +124,7 @@
                   "",
                   {
                     "translate": "item.recondite.fire_elemental_spellbook.magma_bomb",
-                    "fallback": "Magma Bomb",
+                    "fallback": "Magma Bomb ||",
                     "color": "#00a800",
                     "italic": false
                   },
@@ -136,7 +136,7 @@
                     "italic": false
                   },
                   {
-                    "text": " (40s)",
+                    "text": " (60s)",
                     "color": "#00a800",
                     "italic": false
                   }

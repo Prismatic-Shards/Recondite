@@ -1,10 +1,10 @@
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.firebolt.cooldown=160..,recondite.fire_spell.value=1}] run function recondite:item/fire_elemental_spellbook/abilities_tier2/firebolt/firebolt
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.ignition.cooldown=500..,recondite.fire_spell.value=2}] run function recondite:item/fire_elemental_spellbook/abilities_tier2/ignition/ignition
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=300..,recondite.fire_spell.value=3}] run function recondite:item/fire_elemental_spellbook/abilities_tier2/flame_volley/use
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=200..,recondite.fire_spell.value=3}] run function recondite:item/fire_elemental_spellbook/abilities_tier2/flame_volley/use
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.fireball.cooldown=300..,recondite.fire_spell.value=4}] run function recondite:item/fire_elemental_spellbook/abilities_tier2/fireball/fireball
 execute if predicate recondite:is_sneaking as @s[scores={recondite.fire_switch.cooldown=5..}] run function recondite:item/fire_elemental_spellbook/spell_switch/tier_2
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.firebolt.cooldown=..159,recondite.fire_spell.value=1}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.ignition.cooldown=..499,recondite.fire_spell.value=2}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
-execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=..299,recondite.fire_spell.value=3}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
+execute unless predicate recondite:is_sneaking as @s[scores={recondite.flame_volley.cooldown=..199,recondite.fire_spell.value=3}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
 execute unless predicate recondite:is_sneaking as @s[scores={recondite.fireball.cooldown=..299,recondite.fire_spell.value=4}] run title @s actionbar [{"fallback":"Spell under Cooldown","translate":"message.recondite.spell_cooldown"}," "]
 advancement revoke @s only recondite:main/item/use_fire_elemental_spellbook_tier_2

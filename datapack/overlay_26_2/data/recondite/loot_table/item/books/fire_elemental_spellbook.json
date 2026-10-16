@@ -60,8 +60,8 @@
                                 [
                                     "",
                                     {
-                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
-                                        "fallback": " Flame Volley || ",
+                                        "translate": "item.recondite.fire_elemental_spellbook.ignition",
+                                        "fallback": " Ignition || ",
                                         "color": "#00a800",
                                         "italic": false
                                     },
@@ -80,8 +80,8 @@
                                 [
                                     "",
                                     {
-                                        "translate": "item.recondite.fire_elemental_spellbook.ignition",
-                                        "fallback": " Ignition || ",
+                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
+                                        "fallback": " Flame Volley || ",
                                         "color": "#00a800",
                                         "italic": false
                                     },
@@ -92,7 +92,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "(8s)",
+                                        "translate": "(10s)",
                                         "color": "#00a800",
                                         "italic": false
                                     }

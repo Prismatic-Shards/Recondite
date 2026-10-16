@@ -52,27 +52,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "(8s)",
-                                        "color": "#00a800",
-                                        "italic": false
-                                    }
-                                ],
-                                [
-                                    "",
-                                    {
-                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
-                                        "fallback": " Flame Volley || ",
-                                        "color": "#00a800",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "items.recondite.tier_5",
-                                        "fallback": "Tier 5",
-                                        "color": "#00a800",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "(25s)",
+                                        "translate": "(4s)",
                                         "color": "#00a800",
                                         "italic": false
                                     }
@@ -92,7 +72,27 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "(8s)",
+                                        "translate": "(15s)",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    "",
+                                    {
+                                        "translate": "item.recondite.fire_elemental_spellbook.flame_volley",
+                                        "fallback": " Flame Volley || ",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "items.recondite.tier_5",
+                                        "fallback": "Tier 5",
+                                        "color": "#00a800",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "(4s)",
                                         "color": "#00a800",
                                         "italic": false
                                     }
@@ -112,7 +112,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "(8s)",
+                                        "translate": "(10s)",
                                         "color": "#00a800",
                                         "italic": false
                                     }
@@ -132,7 +132,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "(8s)",
+                                        "translate": "(60s)",
                                         "color": "#00a800",
                                         "italic": false
                                     }

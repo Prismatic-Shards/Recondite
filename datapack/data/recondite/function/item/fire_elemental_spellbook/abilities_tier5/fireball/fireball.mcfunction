@@ -1,6 +1,6 @@
 #fireball projectile
 execute at @s rotated as @s positioned 0 0 0 align xyz run summon marker ^ ^ ^2 {Tags:["fireball_marker"]}
-execute anchored eyes run summon fireball ^ ^ ^0.3 {ExplosionPower:3,Tags:["fireball_projectile"]}
+execute anchored eyes run summon fireball ^ ^ ^0.3 {ExplosionPower:4,Tags:["fireball_projectile"]}
 execute at @s as @e[distance=..2,tag=fireball_projectile,type=fireball] positioned 0 0 0 store result score @s MotionX run data get entity @e[tag=fireball_marker,limit=1] Pos[0] 1000
 execute at @s as @e[distance=..2,tag=fireball_projectile,type=fireball] positioned 0 0 0 store result score @s MotionY run data get entity @e[tag=fireball_marker,limit=1] Pos[1] 1000
 execute at @s as @e[distance=..2,tag=fireball_projectile,type=fireball] positioned 0 0 0 store result score @s MotionZ run data get entity @e[tag=fireball_marker,limit=1] Pos[2] 1000
