@@ -24,9 +24,9 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "recondite:thorn_ring",
+                "minecraft:item_model": "recondite:magma_crown",
                 "minecraft:custom_data": {
-                  "recondite:item": "thorn_ring"
+                  "recondite:item": "magma_crown"
                 },
                 "minecraft:equippable": {
                   "slot": "head",
