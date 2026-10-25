@@ -44,7 +44,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_2",
                     "fallback": "Tier 2",
@@ -65,7 +64,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_2",
                     "fallback": "Tier 2",
@@ -86,7 +84,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_2",
                     "fallback": "Tier 2",
@@ -107,7 +104,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_1",
                     "fallback": "Tier 1",

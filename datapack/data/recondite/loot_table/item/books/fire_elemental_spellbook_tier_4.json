@@ -44,7 +44,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_4",
                     "fallback": "Tier 4",
@@ -65,7 +64,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_4",
                     "fallback": "Tier 4",
@@ -86,7 +84,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_4",
                     "fallback": "Tier 4",
@@ -107,7 +104,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_3",
                     "fallback": "Tier 3",
@@ -128,7 +124,6 @@
                     "color": "#00a800",
                     "italic": false
                   },
-                  " || ",
                   {
                     "translate": "items.recondite.tier_2",
                     "fallback": "Tier 2",
